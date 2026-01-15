@@ -1,7 +1,7 @@
 import { Link, Routes, Route } from "react-router-dom";
 import Collaboration from "./collaboration";
 import Donation from "./donation";
-
+import { FaUsers, FaHeart, FaHandshake } from "react-icons/fa";
 function App() {
   return (
     <div className="min-h-screen bg-[#f6f3ee]">
@@ -81,7 +81,9 @@ function App() {
       
       {/* Box 1 */}
       <div className="bg-[#ece6d8] p-6 rounded-xl shadow-sm text-center">
-        <div className="text-[#1f3d2b] text-3xl mb-4">👥</div>
+       <div className="text-green-700 text-4xl mb-4 flex justify-center">
+         <FaUsers />
+       </div>
         <h3 className="font-semibold text-lg mb-2">Who We Are</h3>
         <p className="text-sm text-gray-600">
           Shraddha Welfare Association is an NGO dedicated to supporting senior
@@ -91,7 +93,9 @@ function App() {
 
       {/* Box 2 */}
       <div className="bg-[#ece6d8] p-6 rounded-xl shadow-sm text-center">
-        <div className="text-[#1f3d2b] text-3xl mb-4">❤</div>
+        <div className="text-green-700 text-4xl mb-4 flex justify-center">
+          <FaHeart />
+        </div>
         <h3 className="font-semibold text-lg mb-2">Why We Exist</h3>
         <p className="text-sm text-gray-600">
           To protect elders from abuse, neglect, and isolation while ensuring
@@ -101,7 +105,9 @@ function App() {
 
       {/* Box 3 */}
       <div className="bg-[#ece6d8] p-6 rounded-xl shadow-sm text-center">
-        <div className="text-[#1f3d2b] text-3xl mb-4">🤝</div>
+        <div className="text-green-700 text-4xl mb-4 flex justify-center">
+          <FaHandshake />
+        </div>
         <h3 className="font-semibold text-lg mb-2">How We Help</h3>
         <p className="text-sm text-gray-600">
           Through counselling, awareness programs, legal aid, and strong
